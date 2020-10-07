@@ -1,0 +1,62 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .login-form form h5 {
+        font-size: 14px;
+    }
+    .login-form form input[type=submit] {
+        padding: 0 30px;
+    }
+    .login-form form span a {
+        margin-left: 2px;
+    }
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .col-25{
+        width: 100%;
+    }
+    .login-form {
+        height: 260px;
+    }
+    .login-form form input {
+        margin-bottom: 10px;
+    }
+    .login-form form input[type=submit] {
+        float: right;
+    }
+    .login-form form span {
+        margin-top: -40px;
+    }
+    
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+    
+    
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+
+
+
+}
