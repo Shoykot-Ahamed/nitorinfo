@@ -158,6 +158,22 @@ $(document).ready(function() {
 	});
 });
 
+  //for menu active class
+  $('.event-menu button').on('click', function(event) {
+	$(this).siblings('.active').removeClass('active');
+	$(this).addClass('active');
+	event.preventDefault();
+});
+  // init Isotope
+  var $grid = $('.grid').isotope({
+	itemSelector: '.grid-item',
+	percentPosition: false,
+	masonry: {
+	  // use outer width of grid-sizer for columnWidth
+	  columnWidth: 0,
+	}
+	
+  });
 
 
 // WOW active
