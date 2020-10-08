@@ -396,179 +396,35 @@ header{
 }
 
 
+/* partnership */
 
-
-
-
-
-
-
-
-/* contact-us */
-
-.help-content {
-	position: relative;
+.partnership-area p{
+	color: #333340;
+	text-align: center;
+	font-size: 16px;
 }
-.help-content::after{
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 8px;
-	left: 0;
-    bottom: 0;
-	background: linear-gradient(#7777,#fff);
-    opacity: 0.8;
+.company-details p{
+	text-align: left;
+	font-size: 15px;
+	color: #333340;
 }
-.help-content .section-title h2,
-.office-area .section-title h2{
-	font-size: 23pt;
-	font-weight: 300;
-	letter-spacing: 1px;
-	padding-bottom: 75px;
+.single-company{
+	box-shadow: 4px 4px 18px 4px #ddd;
+	padding: 20px 30px;
+	height: 450px;
+	margin-bottom: 45px;
 }
-.office-area .section-title h2 span,
-.help-content .section-title h2 span{
-    font-weight: 500;
-}
-.help-content .single-help .help-icon img{
-	width: 88px;
-	height: 104px;
-}
-.help-content .single-help .help-title h3{
-	font-size: 18px;
-	padding-top: 20px;
-	padding-bottom: 15px;
-}
-.help-content .single-help button a{color: #ffffff; text-transform: none;}
-.help-content .single-help button,
-.office-details .details button{
-	background: #65c6aa;
-	color: #ffffff;
-	border-radius: 30px;
-	border: none;
-	text-transform: capitalize;
-	width: 140px;
-	height: 40px;
-	letter-spacing: 2px;
-	padding: 0;
-	cursor: pointer;
-	font-weight: 300;
-}
-.need-help-form{
-	padding: 30px 25px;
+.single-company:last-child{
 	height: 500px;
 }
-.popup-map{
-	padding: 25px;
-	height: 400px;
-}
-.need-help-form label{
-	display: block;
-    font-weight: 700;
-    font-size: 16px;
-    float: none;
-    line-height: 1.3;
-    margin: 0 0 4px;
-	padding: 0;
-	color: #000000;
-}
-.need-help-form label span{
-	color: red;
-}
-.need-help-form input{
-	width: 100%;
-	height: 36px;
-	border: 1px solid #ddd;
-	margin-bottom: 20px;
-}
-.need-help-form textarea{
-	width: 100%;
-	height: 120px;
-	border: 1px solid #ddd;
-	margin-bottom: 10px;
-}
-.need-help-form input[type=submit]{
-	width: auto;
-	height: 44px;
-	font-size: 1em;
-	color: #ffffff;
-	font-weight: 300;
-	padding: 10px 15px;
-	background: #29a985;
-    border: 1px solid #ddd;
-	margin-bottom: 20px;
-	cursor: pointer;
-}
-.office-title h5 {
-    padding-bottom: 10px;
-}
-.office-details .icon{
-	float: left;
-}
-.office-details .icon i {
-    color: #65c6aa;
-    font-size: 15px;
-}
-.office-details .details {
-    margin-left: 65px;
-}
-.office-details .details p {
-    margin-bottom: 10px;
-	color: #000000;
-}
 
-/* Styling the Modal window popup */
-	#mymodal,
-	#mymodal2,
-	#mymodal3,
-	#mymodal4{
-	position: relative;
-	background-color: #F6F6F6;
-	max-width: 440px;
-	margin: 0 auto;               
-	}
-	button.modal-btn {
-	padding: 10px 20px;
-	}
-	button.mfp-close{
-		border: none;
-		background: rgba(0,0,0,.2);
-		color: #fff !important;
-		font-size: 14px;
-		line-height: 35px;
-		height: 35px;
-		padding: 0 10px;
-		text-transform: uppercase;
-		border-radius: 2px;
-		display: block;
-		margin: 5px auto 0;
-	}
-	button.mfp-close:hover{
-		background: #29a985;
-	}
-	.mfp-close {
-		width: 100px !important;
-		height: 44px;
-		line-height: 44px;
-		position: absolute;
-		right: 40%;
-		top: 85%;
-		text-decoration: none;
-		text-align: center;
-		opacity: 0.65;
-		padding: 0 0 18px 10px;
-		color: #FFF;
-		font-style: normal;
-		font-size: 28px;
-		font-family: Arial, Baskerville, monospace;
-	}
-	.mfp-close:active {
-		top: 85% !important; 
-	}
-	.place-card.place-card-medium{
-		width: 90px !important;
-	}
-/* Styling the Modal window popup */
+
+
+
+
+
+
+
 
 
 
@@ -774,6 +630,44 @@ header{
     font-size: 18px;
     margin-top: 20px;
     color: #fff;
+}
+
+
+/* cloud-en-us */
+
+.default .section-title h1{
+	font-size: 23pt
+}
+.default .section-title h1 span{
+	font-weight: 700;
+}
+.default .section-title p{
+	padding-bottom: 20px;
+	color: #000000;
+}
+.Cloud-Offerings-area .image-area img{
+	width: 100%;
+}
+.featured-resources-area .featured-resourses-text {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 60px;
+}
+.featured-resources-area .featured-resourses-banner {
+    background-image: url(../img/cloud/featured_img.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.featured-resources-area .featured-resourses-banner.banner {
+    background-image: url(../img/cloud/featured_img.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
 }
 
 /* retail-en-us */
@@ -1206,3 +1100,176 @@ header{
 	color: #ffffff;
 	margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+/* contact-us */
+
+.help-content {
+	position: relative;
+}
+.help-content::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 8px;
+	left: 0;
+    bottom: 0;
+	background: linear-gradient(#7777,#fff);
+    opacity: 0.8;
+}
+.help-content .section-title h2,
+.office-area .section-title h2{
+	font-size: 23pt;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-bottom: 75px;
+}
+.office-area .section-title h2 span,
+.help-content .section-title h2 span{
+    font-weight: 500;
+}
+.help-content .single-help .help-icon img{
+	width: 88px;
+	height: 104px;
+}
+.help-content .single-help .help-title h3{
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.help-content .single-help button a{color: #ffffff; text-transform: none;}
+.help-content .single-help button,
+.office-details .details button{
+	background: #65c6aa;
+	color: #ffffff;
+	border-radius: 30px;
+	border: none;
+	text-transform: capitalize;
+	width: 140px;
+	height: 40px;
+	letter-spacing: 2px;
+	padding: 0;
+	cursor: pointer;
+	font-weight: 300;
+}
+.need-help-form{
+	padding: 30px 25px;
+	height: 500px;
+}
+.popup-map{
+	padding: 25px;
+	height: 400px;
+}
+.need-help-form label{
+	display: block;
+    font-weight: 700;
+    font-size: 16px;
+    float: none;
+    line-height: 1.3;
+    margin: 0 0 4px;
+	padding: 0;
+	color: #000000;
+}
+.need-help-form label span{
+	color: red;
+}
+.need-help-form input{
+	width: 100%;
+	height: 36px;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.need-help-form textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+.need-help-form input[type=submit]{
+	width: auto;
+	height: 44px;
+	font-size: 1em;
+	color: #ffffff;
+	font-weight: 300;
+	padding: 10px 15px;
+	background: #29a985;
+    border: 1px solid #ddd;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.office-title h5 {
+    padding-bottom: 10px;
+}
+.office-details .icon{
+	float: left;
+}
+.office-details .icon i {
+    color: #65c6aa;
+    font-size: 15px;
+}
+.office-details .details {
+    margin-left: 65px;
+}
+.office-details .details p {
+    margin-bottom: 10px;
+	color: #000000;
+}
+
+/* Styling the Modal window popup */
+	#mymodal,
+	#mymodal2,
+	#mymodal3,
+	#mymodal4{
+	position: relative;
+	background-color: #F6F6F6;
+	max-width: 440px;
+	margin: 0 auto;               
+	}
+	button.modal-btn {
+	padding: 10px 20px;
+	}
+	button.mfp-close{
+		border: none;
+		background: rgba(0,0,0,.2);
+		color: #fff !important;
+		font-size: 14px;
+		line-height: 35px;
+		height: 35px;
+		padding: 0 10px;
+		text-transform: uppercase;
+		border-radius: 2px;
+		display: block;
+		margin: 5px auto 0;
+	}
+	button.mfp-close:hover{
+		background: #29a985;
+	}
+	.mfp-close {
+		width: 100px !important;
+		height: 44px;
+		line-height: 44px;
+		position: absolute;
+		right: 40%;
+		top: 85%;
+		text-decoration: none;
+		text-align: center;
+		opacity: 0.65;
+		padding: 0 0 18px 10px;
+		color: #FFF;
+		font-style: normal;
+		font-size: 28px;
+		font-family: Arial, Baskerville, monospace;
+	}
+	.mfp-close:active {
+		top: 85% !important; 
+	}
+	.place-card.place-card-medium{
+		width: 90px !important;
+	}
+/* Styling the Modal window popup */
