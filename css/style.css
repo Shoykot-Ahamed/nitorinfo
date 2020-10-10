@@ -636,14 +636,25 @@ header{
 /* cloud-en-us */
 
 .default .section-title h1{
-	font-size: 23pt
+	font-size: 23pt;
+	font-weight: 300;
+}
+.default-2 .section-title h1{
+	color: #ffffff;
+	font-weight: 300;
 }
 .default .section-title h1 span{
-	font-weight: 700;
+	font-weight: 600;
+}
+.default-2 .section-title h1 span{
+	font-weight: 600;
 }
 .default .section-title p{
 	padding-bottom: 20px;
 	color: #000000;
+}
+.default-2 .section-title p{
+	color: #fff;
 }
 .Cloud-Offerings-area .image-area img{
 	width: 100%;
@@ -675,9 +686,41 @@ header{
 .big2-area.default .section-title P{
 	font-size: 16px;
 }
-
-
-
+.our-service-area .single-services{
+	background: #415e9f;
+	border-radius: 30px;
+	padding: 20px 15px;
+}
+.our-service-area .single-services h4{
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 600;
+}
+.our-service-area .single-services p{
+	color: #ffffff;
+	font-size: 13px;
+	margin: auto;
+}
+.tools-area .tools-content h6{
+	margin-bottom: 2px;
+	font-weight: 600;
+}
+.tools-area .tools-content p{
+	color: #000000;
+}
+.why-nitor-area .single-tec .tec-icon img{
+	height: 100px;
+	width: 100px;
+}
+.why-nitor-area .past-title h5{
+	font-weight: 600;
+}
+.why-nitor-area .single-past .past-content p{
+	color: #000000;
+}
+.why-nitor-area .single-past .past-content p span{
+	font-weight: 600;
+}
 
 
 
@@ -756,6 +799,186 @@ header{
 	letter-spacing: 2px;
 	font-weight: 400;
 }
+.advanced-analytics-image-area img{
+	width: 100%;
+}
+.why-nitor-area.area-2{
+	position: relative;
+}
+.why-nitor-area.area-2::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	background: linear-gradient(#E8E9F4,#DBDCE6) ;
+}
+.maturity-model-area{
+	position: relative;
+}
+.maturity-model-area::after{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+	background: linear-gradient(#C6C6C6, #ddd,#eee,#fff);
+}
+
+.featured-resources-area .featured-resourses-banner.big{
+	background-image: url(../img/big-data/big-data_feature-img1.jpg);
+}
+.featured-resources-area .featured-resourses-banner.big2{
+	background-image: url(../img/big-data/big-data_feature-img2.jpg);
+}
+.featured-resources-area .featured-resourses-banner.big3{
+	background-image: url(../img/big-data/big-data_feature-img3.jpg);
+}
+.featured-resources-area .featured-resourses-banner.big4{
+	background-image: url(../img/big-data/big-data_feature-img4.jpg);
+}
+.featured-resources-area .featured-resourses-banner.big5{
+	background-image: url(../img/big-data/big-data_feature-img5.jpg);
+}
+.featured-resources-area .featured-resourses-banner.big6{
+	background-image: url(../img/big-data/big-data_feature-img6.jpg);
+}
+.featured-resources-area.big .featured-resourses-banner a{
+	width: 150px;
+	padding: 10px 0;
+	background: #65c6aa;
+}
+.featured-resources-area.big .featured-resourses-banner.big6 a.btn.btn-dwn{
+	width: 180px;
+	padding: 10px 0;
+	background: #65c6aa;
+}
+.why-devOps-area .single-why .why-content p{
+	color: #000000;
+}
+.why-devOps-area .single-why .why-content p span{
+	font-weight: 700;
+}
+.our-offerings-area .single-offer{
+	position: relative;
+	width: 100%;
+	height: 435px;
+}
+.our-offerings-area .single-offer .content h4{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 35px;
+}
+.our-offerings-area .single-offer .content p{
+	color: #000000;
+}
+.our-offerings-area .single-offer .font-offer {
+	padding: 75px 20px;
+}
+.our-offerings-area .single-offer:hover .font-offer {
+	animation: font-offer .5s ease;
+}
+@keyframes font-offer{
+	0%{ 
+		transform: scale(1);
+	}
+	100%{ 
+		transform: scale(.1);
+	}
+}
+.our-offerings-area .single-offer .back-offer {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	background: #41b392;
+	padding: 50px 20px;
+	visibility: hidden;
+}
+.our-offerings-area .single-offer .back-offer ul {
+	margin-left: 15px;
+}
+.our-offerings-area .single-offer .back-offer ul li{
+	color: #ffffff;
+	font-size: 14px;
+	list-style-type: disc;
+	line-height: 25px;
+}
+.our-offerings-area .single-offer .back-offer ul li span{
+	font-weight: 600;
+}
+.our-offerings-area .single-offer:hover .back-offer {
+	animation: back-offer .5s ease;
+	visibility: visible;
+}
+@keyframes back-offer{
+	0%{ 
+		transform: scale(.1);
+	}
+	100%{ 
+		transform: scale(1);
+	}
+}
+.diagnostic-area .section-title h1{
+	color: #ffffff;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.diagnostic-area .section-title p{
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 400;
+}
+.diagnostic-area .section-title a{
+	color: #000;
+	background: #ffffff;
+	border-radius: 30px;
+	width: 180px;
+	padding: 15px 50px;
+	text-decoration: none;
+}
+.why-nitor-image img{
+	width: 100%;
+}
+.tools-area{
+	position: relative;
+}
+.slick-slide{
+	width: 0;
+}
+.slick-slide img {
+	display: inline-block;
+}
+.tools-area .tools-arrow {
+	position: absolute;
+    font-size: 37.5px;
+    color: #555555;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 99999;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+.tools-area .tools-arrow.arrow-prev {
+    left: 40px;
+}
+.tools-area .tools-arrow.arrow-next {
+    right: 40px;
+}
+.featured-resources-area.dev .featured-resourses-banner{
+	background-image: url(../img/DEVOPS/devops-resources-block1.jpg);
+}
+.featured-resources-area.dev .featured-resourses-banner.dev2{
+	background-image: url(../img/DEVOPS/devops-resources-block2.jpg);
+}
+
+
+
+
 
 .featured-resourses-banner{
 	background-image: url(../img/retail/retail_featured-resources.jpg);
