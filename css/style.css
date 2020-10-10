@@ -975,6 +975,93 @@ header{
 .featured-resources-area.dev .featured-resourses-banner.dev2{
 	background-image: url(../img/DEVOPS/devops-resources-block2.jpg);
 }
+.mobility-at-nitor-area .section-title h1{
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+.mobility-at-nitor-area .section-title p{
+	color: #ffffff;
+}
+.mobility-at-nitor-area .single-mobility{
+	background: #ffffff;
+	padding: 30px 15px;
+	margin-bottom: 30px;
+}
+.mobility-at-nitor-area .single-mobility:hover{
+	background: none;
+	transition: .3s;
+}
+.mobility-at-nitor-area .single-mobility .icon i{
+	color: #274892;
+	font-size: 50px;
+}
+.mobility-at-nitor-area .single-mobility .content h4{
+	color: #274892;
+	font-size: 18px;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+.mobility-at-nitor-area .single-mobility .content p{
+	color: #000;
+}
+.mobility-at-nitor-area .single-mobility:hover .icon i,
+.mobility-at-nitor-area .single-mobility:hover .content h4,
+.mobility-at-nitor-area .single-mobility:hover .content p{
+	color: #fff;
+	transition: .3s;
+}
+.why-nitor-area.mobile .section-title h1{
+	padding-bottom: 30px;
+}
+.why-nitor-area.mobile .section-title p{
+	padding-bottom: 0px;
+}
+.contago-area .section-title p{
+	color: #ffffff;
+	font-size: 16px;
+}
+.contago-area .section-title a.btn{
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+	background: #46c29e;
+	border-radius: 30px;
+}
+.successes-area .simple-text p span{
+	font-weight: 600;
+	color: #274892;
+}
+.successes-area .single-success .content p{
+	color: #000;
+}
+.successes-area .single-success .content p span{
+	font-weight: 600;
+	color: #274892;
+}
+
+.featured-resources-area.mobile .featured-resourses-banner.mob{
+	background-image: url(../img/mobility/feature-img6.jpg);
+}
+.featured-resources-area.mobile .featured-resourses-banner.mob2{
+	background-image: url(../img/mobility/feature-img7.jpg);
+}
+.featured-resources-area.mobile .featured-resourses-banner.mob3{
+	background-image: url(../img/mobility/feature-img.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
