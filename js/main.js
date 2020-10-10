@@ -158,6 +158,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
   //for menu active class
   $('.event-menu button').on('click', function(event) {
 	$(this).siblings('.active').removeClass('active');

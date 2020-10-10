@@ -418,18 +418,21 @@ header{
 	background: #75D69C;
 	color: #fff;
 }
-.team-wrapper{
+.single-leader{
 	position: relative;
 	overflow: hidden;
 	height: 425px;
 }
-.team-wrapper .team-image a img{
+.single-leader a .team-wrapper{
+	min-height: 350px;
+}
+.team-wrapper .team-image img{
 	filter: grayscale(100%);
 	transition: .7s;
 	width: 100%;
 	z-index: 1;
 }
-.team-wrapper:hover .team-image a img{
+.team-wrapper:hover .team-image img{
 	filter: grayscale(0);
 	transform: scale(1.05);
 }
@@ -457,32 +460,144 @@ header{
 	text-align: left;
 	font-size: 14px;
 }
-.team-wrapper .team-info a{
-	text-decoration: none;
-}
-.team-wrapper .team-info a.name{
-	background: #65C6AA;
-	width: 100%;
-}
-.team-wrapper .team-info a h4{
-	color: #ffffff;
-	background: #65C6AA;
-	text-align: center;
-	padding: 8px 15px;
-	font-size: 18px;
-}
-.team-wrapper .team-info a p{
-	color: #ffffff;
-	font-size: 14px;
-	background: #556270;
-	padding: 8px 15px;
-	margin: 0;
-}
-.linkedin-link a i{
+.leader-linkedin-link a i{
 	font-size: 26px;
     color: #0f127b;
-    margin: 5px 12px 20px;
 }
+.team-area{
+	position: relative;
+}
+.extra-info{
+	position: absolute;
+	background: #ffffff;
+	width: 430px;
+	top: 0;
+	right: 0;
+	transition: .7s;
+}
+.extra-info .info-image img{
+	width: 100%;
+}
+.extra-info .info-title {
+	position: relative;
+}
+.extra-info .info-title h3{
+	position: absolute;
+	padding: 10px 60px;
+	font-size: 26px;
+	font-weight: 700;
+	right: 0;
+	top: -40px;
+	color: #ffffff;
+	background: #65c6aa;
+	text-align: center;
+}
+.extra-info .info-title h4{
+	position: absolute;
+	padding: 10px 60px;
+	width: 80%;
+	right: 0;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	color: #ffffff;
+	background: #556270;
+}
+
+
+
+/* blockchain */
+
+.why-blockchain-area .single-blockchain {
+	padding: 10px 40px 10px 20px;
+}
+.why-blockchain-area .single-blockchain .content h4{
+	color: #ffffff;
+	font-size: 16px;
+}
+.why-blockchain-area .single-blockchain .content p{
+	color: #ffffff;
+}
+.why-blockchain-area .download-area h3{
+	font-size: 23pt;
+	color: #ffffff;
+}
+.why-blockchain-area .download-area a{
+	color: #ffffff;
+	background: #65c6aa;
+	font-weight: 300;
+	border-radius: 30px;
+	margin-top: 30px;
+}
+.we-do-area .single-we-do img{
+	height: 50px;
+	width: 50px;
+	margin-bottom: 20px;
+}
+.we-do-area .single-we-do h5{
+	font-weight: 700;
+}
+.we-do-area .single-we-do p{
+	color: #000;
+}
+.we-do-area .box-flip {
+	perspective: 1000px;
+}
+.we-do-area .box-flip .single-we-do{
+	position: relative;
+	width: 100%;
+	height: 210px;
+	transform-style: preserve-3d;
+	transition: transform 200ms ease-in-out;
+	
+}
+.we-do-area .box-flip .single-we-do:hover{
+	transform: rotateY(-90deg) translateX(60px);
+}
+.we-do-area .box-flip .single-we-do .front-side{
+	position: absolute;
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e4e4e4;
+	border: none;
+}
+.we-do-area .box-flip .single-we-do .front-side{
+	transform: translateX(60px);
+}
+.we-do-area .box-flip .single-we-do .back-side{
+	transform: rotateY(90deg) translateX(60px);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e4e4e4;
+	border: none;
+	padding: 0 30px;
+	color: #000000;
+}
+
+.single-whynitor .icon img{
+	padding-bottom: 15px;
+}
+.single-whynitor .icon h5{
+	color: #ffffff;
+	background: #182681;
+	padding: 6px 20px;
+	width: 170px;
+	font-size: 14px;
+}
+.single-whynitor .icon.text-center h5{
+	margin-left: 100px;
+}
+.single-whynitor .content p{
+	color: #ffffff;
+}
+
 
 
 
@@ -730,6 +845,7 @@ header{
 	font-weight: 300;
 }
 .default-2 .section-title h1{
+	font-size: 23pt;
 	color: #ffffff;
 	font-weight: 300;
 }
