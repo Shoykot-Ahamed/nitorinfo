@@ -395,6 +395,96 @@ header{
 	text-decoration: none;
 }
 
+/* leadership-aree */
+
+.team-menu button{
+	background: none;
+	border: 2px solid #75D69C;
+	color: #75D69C;
+	cursor: pointer;
+	margin: 0 20px 10px 20px;
+	padding: 10px 25px;
+	text-transform: capitalize;
+	transition: .3s;
+	border-radius: 40px;
+	font-size: 15px;
+}
+.team-menu button:hover{
+	background: #75D69C;
+	border: 2px solid #75D69C;
+	color: #fff;
+}
+.team-menu button.active{
+	background: #75D69C;
+	color: #fff;
+}
+.team-wrapper{
+	position: relative;
+	overflow: hidden;
+	height: 425px;
+}
+.team-wrapper .team-image a img{
+	filter: grayscale(100%);
+	transition: .7s;
+	width: 100%;
+	z-index: 1;
+}
+.team-wrapper:hover .team-image a img{
+	filter: grayscale(0);
+	transform: scale(1.05);
+}
+.team-wrapper .team-info{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.team-wrapper .team-info{
+	background: #d1d1d1;
+}
+.team-wrapper .team-info .name{
+	background: #65C6AA;
+	width: 100%;
+	padding: 8px 15px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+}
+.team-wrapper .team-info .post{
+	background: #556270;
+	width: auto !important;
+	padding: 8px 15px;
+	color: #ffffff;
+	text-align: left;
+	font-size: 14px;
+}
+.team-wrapper .team-info a{
+	text-decoration: none;
+}
+.team-wrapper .team-info a.name{
+	background: #65C6AA;
+	width: 100%;
+}
+.team-wrapper .team-info a h4{
+	color: #ffffff;
+	background: #65C6AA;
+	text-align: center;
+	padding: 8px 15px;
+	font-size: 18px;
+}
+.team-wrapper .team-info a p{
+	color: #ffffff;
+	font-size: 14px;
+	background: #556270;
+	padding: 8px 15px;
+	margin: 0;
+}
+.linkedin-link a i{
+	font-size: 26px;
+    color: #0f127b;
+    margin: 5px 12px 20px;
+}
+
+
 
 /* partnership */
 
