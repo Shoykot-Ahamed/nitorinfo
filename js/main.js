@@ -8,11 +8,7 @@ $('#mobile-menu').meanmenu({
 });
 
 // One Page Nav
-var top_offset = $('.header-area').height() - 10;
-$('.main-menu nav ul').onePageNav({
-	currentClass: 'active',
-	scrollOffset: top_offset,
-});
+
 
 
 $(window).on('scroll', function () {
@@ -23,7 +19,80 @@ $(window).on('scroll', function () {
 		$(".header-sticky").addClass("sticky");
 	}
 });
+  // team - active
+  $('.picture-slide-active').slick({
+	dots: true,
+	autoplay: true,
+	autoplaySpeed: 10000,
+	arrows: false,
+	infinite: false,
+	speed: 300,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+	responsive: [
+	  {
+		breakpoint: 1024,
+		settings: {
+		  slidesToShow: 3,
+		  slidesToScroll: 3,
+		  infinite: true,
+		  dots: false
+		}
+	  },
+	  {
+		breakpoint: 991,
+		settings: {
+		  slidesToShow: 2,
+		  slidesToScroll: 1
+		}
+	  },
+	  {
+		breakpoint: 767,
+		settings: {
+		  slidesToShow: 1,
+		  slidesToScroll: 1
+		}
+	  }
 
+	]
+  });
+  
+$('.testimonial-active').slick({
+	dots: false,
+	arrows: true,
+	prevArrow: '.arrow-prev',
+	nextArrow: '.arrow-next',
+	infinite: false,
+	speed: 300,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: false,
+				arrows: true,
+			}
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
 
 
 // mainSlider
@@ -249,6 +318,12 @@ $('.team-menu button').on('click', function (event) {
 
 	]
   });
+
+  window.addEventListener("scroll",function(){
+	  var header = document.querySelector("header");
+	  header.classList.toggle("sticky", window.scrollY > 1);
+  })
+
 
 // WOW active
 new WOW().init();
