@@ -563,47 +563,88 @@ header.sticky .main-menu ul li a{
 	font-size: 26px;
     color: #0f127b;
 }
-.team-area{
-	position: relative;
+
+/* research-as-a-services */
+
+.research-service-title h2, .research-service-area-text h2, .research-service-aproach-details h2, .technology-focus-title h2, .getin-touch-title h2{
+	font-weight: normal;
+	font-size: 30px;
+	color: #000;
+	margin-bottom: 20px;
 }
-.extra-info{
-	position: absolute;
-	background: #ffffff;
-	width: 430px;
-	top: 0;
-	right: 0;
-	transition: .7s;
+.research-service-title h2 span, .research-service-area-text h2 span, .research-service-aproach-details h2 span, .technology-focus-title h2 span, .getin-touch-title h2 span{
+	font-weight: 600;
 }
-.extra-info .info-image img{
+.research-service-title p, .research-service-aproach-details p, .research-service-area-text p{
+	color: #121212;
+}
+.research-service-aproach ul{
+	margin-left: 30px;
+	margin-top: 20px;
+}
+.research-service-aproach ul li{
+	list-style: initial;
+}
+.research-service-aproach-details img{
+	padding: 20px 0;
+}
+
+.single-technology-focus{
+	cursor: pointer;
+	padding-left: 90px;
+}
+.single-technology-focus p{
+	color: #121212;
+	text-transform: capitalize;
+	margin-top: 10px;
+}
+
+.related-service-area{
+	background: #1D76AF;
+}
+.related-service-title h3{
+	color: #fff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+}
+.related-service-image p{
+	font-size: 18px;
+	margin-top: 20px;
+}
+.getin-touch-area label{
+	color: #000;
+	text-transform: capitalize;
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0;
+	margin-top: 10px;
+}
+.getin-touch-area label span{
+	content: "*";
+	color: #FF0000;
+	padding-left: 3px;
+}
+.getin-touch-area input, textarea{
+	border: none;
+	border-bottom: 1px solid #000;
+}
+.getin-touch-area textarea{
 	width: 100%;
 }
-.extra-info .info-title {
-	position: relative;
+.submit-button .btn{
+	background: #65C6AA;
+	color: #fff;
+	padding: 15px 40px;
+	text-transform: capitalize;
+	transition: .3s;
+	border-radius: 40px;
+	font-size: 16px;
+	letter-spacing: 0;
+	font-weight: normal;
 }
-.extra-info .info-title h3{
-	position: absolute;
-	padding: 10px 60px;
-	font-size: 26px;
-	font-weight: 700;
-	right: 0;
-	top: -40px;
-	color: #ffffff;
-	background: #65c6aa;
-	text-align: center;
+.submit-button input{
+	border-bottom: 0;
 }
-.extra-info .info-title h4{
-	position: absolute;
-	padding: 10px 60px;
-	width: 80%;
-	right: 0;
-	font-size: 20px;
-	font-weight: 300;
-	text-align: center;
-	color: #ffffff;
-	background: #556270;
-}
-
-
 
 /* blockchain */
 
@@ -2058,8 +2099,408 @@ button.slick-next::after{
 	color: #fff;
 }
 
+/* blog */
+
+.select-area .single-select-box select{
+	width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+	outline: none;
+	font-size: 14px;
+}
+.select-area .single-select-box select option{
+	text-transform: capitalize;
+}
+.blog-area-logo{
+	margin-top: 3px;
+}
+.blog-menu-area{
+	background: #000;
+	padding: 20px 0;
+}
+.blog-menu ul li{
+	display: inline-block;
+}
+.blog-menu ul li a{
+	display: block;
+    font-size: 14px;
+    line-height: 18px;
+	padding: 12px 20px;
+	color: #fff;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	transition: .5s;
+	text-decoration: none;
+}
+.blog-menu ul li a:hover{
+	color: #ac0404;
+}
+.blog-menu-area .blog-menu ul li.active a{
+	color: #ac0404;
+}
+.blog-menu-area .search-subscribe{
+	margin-top: 3px;
+}
+.blog-menu-area .search-subscribe ul li{
+	display: inline-block;
+}
+.blog-menu-area .search-form input{
+	border: 1px solid #fff;
+	border-radius: 25px;
+	background: none;
+	padding: 5px;
+	padding-left: 10px;
+	width: 198px;
+}
+.blog-menu-area .search-form input:hover{
+	border: 1px solid green;
+}
+.blog-menu-area .search-form input text{
+	color: #fff;
+}
+.blog-menu-area .search-form{
+	position: relative;
+}
+.blog-menu-area .search-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.blog-menu-area .search-btn button{
+	height: 35px;
+	width: 40px;
+	border: none;
+	border-radius: 25px;
+	border: 1px solid #fff;
+	background: none;
+	cursor: pointer;
+	position: relative;
+}
+.blog-menu-area .search-btn button::after{
+	position: absolute;
+	content: "\f002";
+	color: #fff;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 700;
+	top: 5px;
+	left: 10px;
+	font-size: 18px;
+}
+.blog-menu-area .subscribe-btn a{
+	background: #fff;
+	color: #000;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Open Sans', sans-serif;
+	padding: 7px 25px;
+	border-radius: 25px;
+	margin: -4px 50px 0 20px;
+}
+.blog-menu-area .social-links a{
+	color: #fff;
+	margin: 0;
+	font-size: 18px;
+	margin-right: 20px;
+}
+.blog-menu-area .social-links{
+	margin-top: 8px;
+}
 
 
+.blog-left a.btn{
+	font-size: 10px;
+	background: #B21D21;
+	padding: 2px 5px;
+	border-radius: 0;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 18px;
+}
+.blog-left a.btn:hover{
+	background: #333333;
+}
+.blog-left h1{
+	color: #000;
+	font-weight: 600;
+	margin-top: 10px;
+	line-height: 1.1;
+	font-family: 'Open Sans', sans-serif;
+}
+.blog-left span{
+	color: #666666;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+.blog-left span span{
+	color: #B21D21;
+	font-weight: 600;
+}
+.blog-left p{
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	padding-right: 50px;
+	font-family: Gordita, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+.blog-left a.read-more-btn{
+	font-size: 12px;
+	text-transform: capitalize;
+	background: #fff;
+	border: 1px solid #B21D21;
+	border-radius: 0;
+	padding: 5px 10px;
+	color: #B21D21;
+	transition: .5s;
+}
+.blog-left a.read-more-btn:hover{
+	background: #B21D21;
+	border: 1px solid #B21D21;
+	color: #fff;
+}
+
+
+
+.tab-heading .nav-link{
+	border: 1px solid #ddd;
+}
+.tab-details {
+	border: 1px solid #ddd;
+	border-top: 0;
+	padding: 20px;
+}
+.single-tab-image{
+	float: left;
+	margin-top: 2px;
+}
+.single-tab-text{
+	overflow: hidden;
+	padding-left: 10px;
+}
+.single-tab-text a{
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	color: #000;
+}
+.single-tab-text a:hover{
+	text-decoration: underline;
+}
+.single-tab-text span{
+	font-size: 13px;
+	color: #A8A8A8;
+}
+.blog-page-tab .nav-item{
+	width: 50%;
+}
+.blog-page-tab a.nav-link{
+	background: #F0F0F0;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+}
+.blog-page-tab a.nav-link.active{
+	background: none;
+}
+.blog-page-tab a.nav-link.active {
+	border-bottom: #F0F0F0;
+}
+.next-btn a{
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+	padding-top: 20px;
+	color: #000;
+}
+.next-btn a i{
+	font-size: 12px;
+}
+
+
+.most-trending-topic-title h3, .author-heading h3, .about-nitor-title h3{
+	color: #B21D21;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.most-trending-topic-img{
+	margin-bottom: 70px;
+}
+.see-all-btn a{
+	font-size: 24px;
+	padding-right: 35px;
+	font-weight: 600;
+	color: #B21D21;
+	text-transform: capitalize;
+	text-decoration: underline;
+	position: relative;
+}
+.see-all-btn a:hover{
+	text-decoration: none;
+}
+.see-all-btn a::after{
+	position: absolute;
+	content: "\f061";
+	color: #333333;
+	font-weight: 600;
+	font-family: "Font Awesome 5 Free";
+	right: 0;
+	top: -10px;
+}
+
+.author-details h5{
+	text-transform: capitalize;
+	color: #B21D21;
+	font-weight: 600;
+	margin-top: 25px;
+	line-height: 15px;
+	font-family: Gordita, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+.author-details h5:hover a{
+	color: #B21D21;
+}
+.author-details span{
+	font-size: 14px;
+	line-height: 21px;
+	display: block;
+}
+.author-details ul{
+}
+.author-details ul li {
+	display: inline-block;
+    font-size: 12px;
+    color: #B21D21;
+    border: 1px solid #B21D21;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin: 10px 2px;
+    margin-bottom: 0px;
+}
+.author-details p{
+	font-size: 14px;
+	color: #000;
+	line-height: 21px;
+	font-family: Gordita, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	padding-right: 10px;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+.author-details a.show-more-btn{
+	font-size: 13px;
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: #B21D21;
+	margin-top: 0;
+}
+.authors-social-links a{
+	height: 35px;
+	width: 35px;
+	line-height: 35px;
+	display: inline-block;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-right: 3px;
+}
+
+.about-text p{
+	color: #000;
+	font-size: 16px;
+	font-family: Gordita, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+.about-text ul{
+	padding: 20px 0;
+	display: inline-flex;
+}
+.about-text ul li {
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.about-text ul li i{
+	color: #B21D21;
+	font-size: 20px;
+}
+.about-text ul li a{
+	color: #333333;
+	font-weight: 500;
+	font-size: 14px;
+	font-family: Gordita, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	padding-left: 10px;
+}
+.about-text ul li a:hover{
+	text-decoration: underline;
+}
+.about-text img{
+	display: block;
+	margin: 10px 0;
+}
+.about-text span{
+	font-size: 14px;
+	color: #000;
+}
+.about-text span a{
+	font-size: 15px;
+	color: #B21D21;
+	font-weight: 600;
+	padding-left: 3px;
+}
+.about-text span a:hover{
+	text-decoration: underline;
+}
+
+.subscribe-form {
+	box-shadow: 0px 0px 22px 0px #ddd;
+	padding: 30px 20px;
+	border-radius: 25px;
+	height: 505px;
+}
+.subscribe-title h3{
+	font-weight: 400;
+	color: #444444;
+	font-size: 22px;
+	padding-bottom: 15px;
+}
+.subscribe-form .form-group input, textarea{
+	width: 340px;
+	border-radius: 25px;
+	border: 1px solid #000;
+	padding: 10px;
+}
+.subscribe-form .form-group input.btn{
+	background: #B21D21;
+	border: 0;
+	width: 120px;
+	float: right;
+	text-transform: capitalize;
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: -10px;
+}
+.subscribe-form .form-group input.btnhover{
+	background: #000;
+}
+.subscribe-form .form-group *::placeholder {
+	color: #999;
+	font-size: 16px;
+	opacity: 1;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.blog-footer{
+	background: #000000;
+	padding: 10px 0;
+}
+.blog-footer p{
+	color: #ffffff;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.blog-footer p a{
+	color: #ffffff;
+}
 
 /* contact-us */
 
@@ -2114,6 +2555,10 @@ button.slick-next::after{
 .need-help-form{
 	padding: 30px 25px;
 	height: 500px;
+}
+.need-help-form.leader{
+	padding: 0;
+	height: auto;
 }
 .popup-map{
 	padding: 25px;
@@ -2173,6 +2618,37 @@ button.slick-next::after{
     margin-bottom: 10px;
 	color: #000000;
 }
+.popup-img img{
+	width: 100%;
+}
+.popup-title{
+	text-align: center;
+	float: right;
+	margin-top: -46px;
+}
+.popup-title h3{
+	background: #65c6aa;
+    color: #fff;
+    font-size: 26px;
+    min-width: 317.8px;
+	line-height: 1 !important;
+	padding: 10px 20px;
+	margin: 0;
+	font-weight: 700;
+}
+.popup-title h4{
+	background: #556270;
+	color: #ffffff;
+    font-size: 20px;
+	min-width: 200px;
+	line-height: 1 !important;
+	padding: 10px 20px;
+	font-weight: 100;
+    min-width: 200px;
+}
+.popup-content{
+	padding: 40px 40px 60px;
+}
 
 /* Styling the Modal window popup */
 	#mymodal,
@@ -2183,6 +2659,23 @@ button.slick-next::after{
 	background-color: #F6F6F6;
 	max-width: 440px;
 	margin: 0 auto;               
+	}
+	#leader1,
+	#leader2,
+	#leader3,
+	#leader4,
+	#leader5,
+	#leader6,
+	#leader7,
+	#leader8,
+	#leader9,
+	#leader10
+	#leader11,
+	#leader12{
+		position: relative;
+		background-color: #F6F6F6;
+		max-width: 430px;
+		margin: 0px 0 0 68%;
 	}
 	button.modal-btn {
 	padding: 10px 20px;
@@ -2203,13 +2696,46 @@ button.slick-next::after{
 	button.mfp-close:hover{
 		background: #29a985;
 	}
+	.pu-leader button.mfp-close.leader {
+		border: none;
+		background: #29a985;
+		color: #fff !important;
+		font-size: 14px;
+		line-height: 40px;
+		height: 40px;
+		width: 40px;
+		padding: 0 10px;
+		text-transform: uppercase;
+		display: block;
+		margin: 0;
+	}
+	.pu-leader button.mfp-close:hover{
+		background: rgba(0,0,0,.2);
+	}
 	.mfp-close {
 		width: 100px !important;
 		height: 44px;
 		line-height: 44px;
 		position: absolute;
-		right: 40%;
+		right: 0;
+		left: 0;
 		top: 85%;
+		text-decoration: none;
+		text-align: center;
+		opacity: 0.65;
+		padding: 0 0 18px 10px;
+		color: #FFF;
+		font-style: normal;
+		font-size: 28px;
+		font-family: Arial, Baskerville, monospace;
+	}
+	.pu-leader .mfp-close {
+		width: 40px !important;
+		height: 40px;
+		line-height: 44px;
+		position: absolute;
+		left: 390px;
+		top: 0 !important;
 		text-decoration: none;
 		text-align: center;
 		opacity: 0.65;
@@ -2222,8 +2748,21 @@ button.slick-next::after{
 	.mfp-close:active {
 		top: 85% !important; 
 	}
+	.pu-leader .mfp-close:active {
+		top: 0 !important; 
+	}
 	.place-card.place-card-medium{
 		width: 90px !important;
+	}
+	.mfp-container {
+		text-align: right;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		padding: 0 0px;
+		box-sizing: border-box;
 	}
 /* Styling the Modal window popup */
 

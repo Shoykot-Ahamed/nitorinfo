@@ -318,11 +318,58 @@ $('.team-menu button').on('click', function (event) {
 
 	]
   });
+  $('.technology-focus-active').slick({
+	dots: false,
+	arrows: false,
+	infinite: false,
+	autoplay: true,
+	autoplaySpeed: 1000,
+	speed: 300,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				infinite: false,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		}
+	]
+});
 
   window.addEventListener("scroll",function(){
 	  var header = document.querySelector("header");
 	  header.classList.toggle("sticky", window.scrollY > 1);
-  })
+  });
+
+$(document).ready(function(){
+	$(".toogle_btn").click(function(){
+		$(this).toggleClass("active");
+		if($(".toogle_btn").hasClass("active")){
+			$(".toggle_text").text("Show Less")
+		}
+		else{
+			$(".toggle_text").text("Show More")
+		}
+	});
+});
 
 
 // WOW active
