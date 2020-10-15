@@ -453,6 +453,9 @@ header.sticky .main-menu ul li a{
     font-size: 42px;
 	font-weight: 400;
 }
+.banner.events .banner-title h2 {
+    font-size: 40px;
+}
 .banner.career .banner-title h2 {
     text-transform: uppercase;
     color: #fff;
@@ -480,6 +483,9 @@ header.sticky .main-menu ul li a{
     font-size: 36px;
     font-weight: 600;
     padding-top: 25px;
+}
+.banner.events .banner-title h2 span {
+    font-weight: 400;
 }
 .banner-title.animate a {
     z-index: 7;
@@ -992,12 +998,21 @@ header.sticky .main-menu ul li a{
 .default .section-title h1 span{
 	font-weight: 600;
 }
+.bcp-area.default .section-title h1{
+	padding-bottom: 20px;
+}
 .default-2 .section-title h1 span{
 	font-weight: 600;
 }
 .default .section-title p{
 	padding-bottom: 20px;
 	color: #000000;
+}
+.bcp-area.default .section-title p{
+	text-align: left;
+	padding: 0;
+	color: #000000;
+	font-weight: 300;
 }
 .default-2 .section-title p{
 	color: #fff;
@@ -1210,18 +1225,28 @@ header.sticky .main-menu ul li a{
 	width: 100%;
 	height: 435px;
 }
+.core-value-area .single-value{
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
 .our-offerings-area .single-offer .content h4{
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 35px;
 }
-.our-offerings-area .single-offer .content p{
+.our-offerings-area .single-offer .content p,
+.core-value-area .single-value .content p{
 	color: #000000;
 }
-.our-offerings-area .single-offer .font-offer {
+.our-offerings-area .single-offer .font-offer{
 	padding: 75px 20px;
 }
-.our-offerings-area .single-offer:hover .font-offer {
+.core-value-area .single-value .font-value {
+	padding: 20px 20px;
+}
+.our-offerings-area .single-offer:hover .font-offer,
+.core-value-area .single-value:hover .font-value {
 	animation: font-offer .5s ease;
 }
 @keyframes font-offer{
@@ -1232,7 +1257,8 @@ header.sticky .main-menu ul li a{
 		transform: scale(.1);
 	}
 }
-.our-offerings-area .single-offer .back-offer {
+.our-offerings-area .single-offer .back-offer,
+.core-value-area .single-value .back-value {
 	position: absolute;
 	bottom: 0;
 	top: 0;
@@ -1252,7 +1278,11 @@ header.sticky .main-menu ul li a{
 .our-offerings-area .single-offer .back-offer ul li span{
 	font-weight: 600;
 }
-.our-offerings-area .single-offer:hover .back-offer {
+.core-value-area .single-value .back-value p{
+	color: #ffffff;
+}
+.our-offerings-area .single-offer:hover .back-offer,
+.core-value-area .single-value:hover .back-value {
 	animation: back-offer .5s ease;
 	visibility: visible;
 }
@@ -2787,16 +2817,18 @@ button.slick-next::after{
     font-weight: 600;
     position: relative;
 }
-.offers-details ul li.menu {
+.offers-details ul li.menu  {
     background: #65C6AA;
     padding-top: 10px;
-    /* padding-left: 60px; */
     margin: 5px 0;
     border-radius: 5px;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
     position: relative;
+}
+.offers-details ul li.menu h4 {
+    font-size: 18px;
+	color: #fff;
+    font-weight: 600;
+    padding-left: 50px;
 }
 .accordion .menu:before {
     position: absolute;
@@ -2831,8 +2863,141 @@ button.slick-next::after{
 	font-size: 15px;
 	color: #000;
 	font-weight: 300;
-	width: 70%;
 }
 .offers-details ul li .submenu.collapse.show{
 	background: #f8f8f8;
+}
+.demond-list .tilte h4{
+	font-weight: 600;
+}
+.demond-list ul {
+	padding-left: 100px;
+}
+.demond-list ul li{
+	margin: 5px 0;
+	font-size: 14px;
+	list-style: disc;
+	text-align: left;
+}
+.demond-list a.btn {
+    background: #1aa2db;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    margin: 30px 0;
+}
+.demond-list a.btn:hover {
+    color: #ffffff;
+}
+.raffle-price-area .winner-area p {
+    font-size: 20px;
+    color: #fff;
+}
+.raffle-price-area .winner-area h4 {
+    font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+}
+.raffle-price-area .winner-area p.position {
+    font-size: 18px;
+    color: #fff;
+}
+.growth-area .growth-details{
+	position: relative;
+}
+.growth-area .growth-details .growth-img img{
+    width: 100%;
+}
+.growth-area .growth-details .growth-img.img-2 img{
+    margin-top: -50px;
+}
+.growth-area .growth-details .growth-content p{
+	margin: 0;
+}
+.growth-area .growth-details .arrow_box {
+    background: #0700d8;
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: .8;
+}
+.growth-area .growth-details .arrow_box:before {
+    content: '';
+    position: absolute;
+    top: -210px;
+    right: 0;
+    left: -62px;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border: 110px solid transparent;
+    border-bottom: 100px solid #0700d8;
+}
+
+/* bcp */
+
+.download-about-area .section-title h4{
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.download-about-area .single-about .icon i{
+	color: #43D7AC;
+	font-size: 24px;
+}
+.download-about-area .single-about .content p{
+	color: #000;
+}
+.presenter-area .single-presenter{
+	background: #43d7ac;
+	border-radius: 25px;
+	padding: 20px 25px;
+	height: 100%;
+}
+.presenter-area .single-presenter .title h3{
+	color: #fff;
+	font-weight: 700;
+}
+.presenter-area .single-presenter .title p{
+	color: #fff;
+	font-weight: 600;
+}
+.presenter-area .single-presenter .content p{
+	color: #fff;
+}
+.bcp-contact-area form label{
+	color: #000000;
+	font-weight: 500;
+	margin: 0;
+}
+.bcp-contact-area form label span{
+	color: #f00;
+}
+.bcp-contact-area form input {
+	width: 100%;
+    border: none;
+	border-bottom: 1px solid #908f8f;
+	margin-bottom: 10px;
+}
+.bcp-contact-area form input[type=submit] {
+	font-size: 15px;
+	width: auto;
+    border: none;
+	padding: 15px 40px;
+	border-radius: 30px;
+	margin-top: 25px;
+	background: #15A778;
+}
+
+/* data-monetization */
+.webiner-area .section-title p{
+	color: #000000;
+}
+.webiner-area .single-webiner ul li{
+	list-style-type: disc;
+	margin: 5px 0;
+	font-size: 14px;
 }
